@@ -1,0 +1,58 @@
+@media(min-width:768px) {
+    .cont {
+        max-width: 768px;
+    }
+
+    header img {
+        width: 85px;
+        height: 25px;
+    }
+
+    h1 {
+        font-size: 48px;
+        margin-top: 48px;
+    }
+
+    h2 {
+        font-size: 20px;
+        margin-top: 16px;
+    }
+
+    .btnbox {
+        width: auto;
+        height: 56px;
+
+    }
+
+    input {
+        width: 421px;
+    }
+
+    button {
+        width: 200px;
+    }
+
+    input {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    main {
+        margin-top: 96px;
+    }
+
+    .imgmob {
+        display: none;
+    }
+
+    .imgtab {
+        display: block;
+    }
+
+    footer {
+        margin-top: 72px;
+        margin-left: 254.5px;
+    }
+
+
+}
