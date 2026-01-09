@@ -10,6 +10,8 @@ btn.addEventListener('click', () => {
 
     if (input.value.trim() === "") {
         p.classList.add('pshow')
+        input.classList.add('inputerror')
+
 
     } else if (!check.test(input.value.trim())) {
 
@@ -26,14 +28,18 @@ input.addEventListener('input', () => {
         input.classList.add('inputerror')
     }
     else {
-        input.classList.remove('inputerror')
-        input.classList.add('inputtrue')
+
+
         p.classList.remove('pshow')
     }
     if (check.test(input.value.trim())) {
         error.classList.remove('showerror')
+        input.classList.add('inputtrue')
     }
 })
-input.addEventListener('mouseleave', function () {
-    this.blur()
+input.addEventListener('focus', () => {
+    input.classList.add('scale')
+})
+input.addEventListener('blur', () => {
+    input.classList.remove('scale')
 })

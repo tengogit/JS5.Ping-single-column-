@@ -78,6 +78,8 @@ input {
     border: 1px solid var(--inputborder);
     padding-left: 24px;
     padding-right: 24px;
+    
+transition: transform 0.3s ease;
 }
 
 input::placeholder {
@@ -174,4 +176,7 @@ p {
 
 .showerror {
     display: block;
+}
+.scale{
+transform: scale(1.5);
 }
